@@ -1,0 +1,4 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+www.simplxr.com	TRUE	/	FALSE	1999999999	viewedPosts	%5B0%2C301%5D
+
