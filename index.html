@@ -55,8 +55,10 @@
     </style>
 </head>
 
-<body data-spy="scroll" data-target="#navbar" data-offset="30">
 
+<body   >
+    <div class="bgcontain">
+        <div class="loader"></div></div>
     <!-- Nav Menu -->
 
     <div class="nav-menu fixed-top">
@@ -940,6 +942,10 @@
         }, function () {
             $('.authorWindowWrapper').stop().fadeOut('fast').find('p').removeClass('trans');
         });
+          $(window).bind("load", function() {
+        $('.bgcontain').delay(1600).fadeOut("slow");
+    });
+
     </script>
 </body>
 

@@ -880,3 +880,65 @@ position: absolute;
     background-position: 50% 50%;
     background-repeat: no-repeat;
   }
+
+  :root {
+    --color-bg-1: #1be4da;
+    --color-bg-2: #5d7ce9;
+    --color-battery: #fff;
+    --color-light: #00b0e6;
+  }
+  .bgcontain {
+      z-index:9999;
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right, var(--color-bg-1), var(--color-bg-2));
+  }
+  .loader {
+    z-index:9999;
+
+    position: fixed;
+    width: 6rem;
+    height: 3rem;
+    border: 0.5rem solid var(--color-battery);
+    background-image: linear-gradient(to right, #fff, #fff);
+    background-repeat: no-repeat;
+    background-size: 30% 100%;
+    -webkit-animation: charge 3s steps(4) infinite;
+            animation: charge 3s steps(4) infinite;
+  }
+  .loader::before,
+  .loader::after {
+    display: block;
+    position: absolute;
+    content: '';
+    background: var(--color-battery);
+  }
+  .loader::before {
+    top: 50%;
+    right: 0;
+    width: 0.5rem;
+    height: 2rem;
+    -webkit-transform: translate(1rem, -50%);
+            transform: translate(1rem, -50%);
+  }
+  @-webkit-keyframes charge {
+    0% {
+      background-size: 0% 100%;
+    }
+    100% {
+      background-size: 140% 100%;
+    }
+  }
+  @keyframes charge {
+    0% {
+      background-size: 0% 100%;
+    }
+    100% {
+      background-size: 140% 100%;
+    }
+  }
+  
