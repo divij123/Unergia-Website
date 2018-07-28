@@ -52,6 +52,10 @@
             width: 50%;
             height: 50%;
         }
+        .navbar-dark .navbar-nav .nav-link
+    {
+        color: #fff;
+    }
     </style>
 </head>
 
@@ -65,7 +69,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <nav class="navbar navbar-dark navbar-expand-lg">
+                    <nav class="navbar navbar-dark navbar-expand-lg" style="color:#fff">
                         <a class="navbar-brand" href="index.html">
                             <img src="logo.png" width="60px" class="img-fluid" alt="logo">
                         </a>
@@ -76,24 +80,24 @@
                         <div class="collapse navbar-collapse" id="navbar">
                             <ul class="navbar-nav ml-auto">
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="#home">HOME
+                                    <a class="nav-link " href="#home">HOME
                                         <span class="sr-only">(current)</span>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#features">ABOUT US</a>
+                                    <a class="nav-link" href="#about">ABOUT US</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#gallery">CUSTOMER BASE</a>
+                                    <a class="nav-link" href="#customer">CUSTOMER BASE</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#pricing">CROWD FUNDER</a>
+                                    <a class="nav-link" href="#crowd">CROWD FUNDER</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#contact">KNOWLEDGE HUB</a>
+                                    <a class="nav-link" href="#knowledge">KNOWLEDGE HUB</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#contact">CASE STUDIES</a>
+                                    <a class="nav-link" href="#case">CASE STUDIES</a>
                                 </li>
 
                                 <li class="nav-item">
@@ -242,7 +246,7 @@
 
     </div> -->
     <!-- // end .section -->
-    <div class="section">
+    <div class="section" id="about">
 
         <div class="container">
             <div class="row">
@@ -269,10 +273,10 @@
     <!-- // end .section -->
 
 
-    <div class="section light-bg" style="z-index: 999999 !important;">
+    <div class="section light-bg" style="z-index: 999999 !important;" id="customer">
         <div class="container">
             <div class="section-title">
-                <small>PROJECTS</small>
+                <small>CUSTOMER BASE</small>
                 <h3>See how we help others</h3>
             </div>
 
@@ -444,12 +448,42 @@
     </div>
     <!-- // end .section -->
 
+    <div class="section pt-0" id="crowd" style="margin-top:20px">
+        <div class="container">
+            <div class="section-title">
+                <small></small>
+                <h3>Crowd Funder</h3>
+            </div>
+
+            <div class="row pt-4">
+                <div class="col-md-6">
+                    <h4 class="mb-3">Can I try before I buy?</h4>
+                    <p class="light-font mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium,
+                        nisi nisi fermentum enim, et sagittis dolor nulla vel sapien. Vestibulum sit amet mattis ante. </p>
+                    <h4 class="mb-3">What payment methods do you accept?</h4>
+                    <p class="light-font mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium,
+                        nisi nisi fermentum enim, et sagittis dolor nulla vel sapien. Vestibulum sit amet mattis ante. </p>
+
+                </div>
+                <div class="col-md-6">
+                    <h4 class="mb-3">Can I change my plan later?</h4>
+                    <p class="light-font mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium,
+                        nisi nisi fermentum enim, et sagittis dolor nulla vel sapien. Vestibulum sit amet mattis ante. </p>
+                    <h4 class="mb-3">Do you have a contract?</h4>
+                    <p class="light-font mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium,
+                        nisi nisi fermentum enim, et sagittis dolor nulla vel sapien. Vestibulum sit amet mattis ante. </p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
 
     <div class="section">
         <div class="container">
             <div class="section-title">
                 <small></small>
-                <h3>Testimonials</h3>
+                <h3>Knowledge Hub</h3>
             </div>
 
             <div class="testimonials owl-carousel">
@@ -485,10 +519,10 @@
     <!-- // end .section -->
 
 
-    <div class="section light-bg" id="gallery">
+    <div class="section light-bg" id="case">
         <div class="container">
             <div class="section-title">
-                <small>GALLERY</small>
+                <small>Case Studies</small>
                 <h3>Prototype Screenshots</h3>
             </div>
 
@@ -509,7 +543,7 @@
 
 
 
-    <div class="container2">
+    <div class="container2" style="margin-bottom:-150px">
         <div class="at-section">
             <div class="section-title">
                 <small>THE TEAM</small>
