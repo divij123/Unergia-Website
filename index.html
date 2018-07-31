@@ -56,6 +56,11 @@
         .navbar-dark .navbar-nav .nav-link {
             color: #fff;
         }
+        @media only screen and (max-device-width: 480px) {
+            #counters {
+        height:300px ;
+    }
+}
     </style>
 </head>
 
@@ -113,7 +118,7 @@
     </div>
 
 
-    <header class="bg-gradient" id="home">
+    <header class="bg-gradient" id="home" style="padding-bottom:20px">
         <div id="particles-js"></div>
 
         <div class="container mt-5">
@@ -135,18 +140,18 @@
             </h2>
             <br>
             <br>
-            <p class="tagline container" style="">Unergia is an crowdfunding platform for solar projects that is powered by blockchain. </p>
+            <p class="tagline container" style="">Unergia is a crowdfunding platform for solar projects that is powered by blockchain. </p>
             <br>
             <br>
 
             <div class="row">
                 <div class="col-1 col-lg-3 ">
                 </div>
-                <div class="col-10	col-lg-6">
+                    <div class="col-10	col-lg-6">
+                   
                     <div class="embed-responsive embed-responsive-16by9" style="display: flex;flex-wrap: nowrap;justify-content: flex-end;z-index: 59;bottom: 5%;">
                         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/LUcK7xj4EoU" allowfullscreen></iframe>
                     </div>
-                </div>
             </div>
 
             </div>
@@ -156,97 +161,34 @@
 
 
 
-    <div class="client-logos my-5" style="margin:0px !important;padding:80px 0px 0px 0px;margin:0px; background: #FAF6FB;">
+    <div id="counters" class=" client-logos my-5" style="margin:0px !important;padding:20px 0px 0px 0px;margin:0 auto; height:125px; background: #FAF6FB;">
         <div class="row" style="padding:0px;margin:0px;">
             <div class="col-md-4 col-sm-12">
-                <h1>
-                    <span id="number1" class="number">2,523</span>
+                <h1 style="margin-bottom:0px">
+                    <span id="number1" class="number"></span>
                 </h1>
                 <p>Units of Energy Used </p>
                 <i class="fa fa-users"></i>
             </div>
             <div class="col-md-4 col-sm-12">
-                <h1>$
-                    <span id="number2" class="number">600</span>
+                <h1 style="margin-bottom:0px">$
+                    <span id="number2" class="number"></span>
                 </h1>
                 <p>Money Saved</p>
                 <i class="fa fa-desktop"></i>
             </div>
             <div class="col-md-4 col-sm-12">
-                <h1>
-                    <span id="number3" class="number">1,500</span>
+                <h1 style="margin-bottom:0px">
+                    <span id="number3" class="number"></span>
                 </h1>
                 <p>Transactions</p>
                 <i class="fa fa-coffee"></i>
             </div>
         </div>
-        <!-- <div class="container text-center">
-            <img src="images/client-logos.png" alt="client logos" class="img-fluid">
-    </div> -->
+     
     </div>
     </div>
-    <!-- <div class="section light-bg" id="features">
-
-
-        <div class="container">
-
-            <div class="section-title">
-                <small>HIGHLIGHTS</small>
-                <h3>Features you love</h3>
-            </div>
-
-
-            <div class="row">
-                <div class="col-12 col-lg-4">
-                    <div class="card features">
-                        <div class="card-body">
-                            <div class="media">
-                                <span class="ti-face-smile gradient-fill ti-3x mr-3"></span>
-                                <div class="media-body">
-                                    <h4 class="card-title">Simple</h4>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque
-                                        </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <div class="card features">
-                        <div class="card-body">
-                            <div class="media">
-                                <span class="ti-settings gradient-fill ti-3x mr-3"></span>
-                                <div class="media-body">
-                                    <h4 class="card-title">Customize</h4>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque
-                                        </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <div class="card features">
-                        <div class="card-body">
-                            <div class="media">
-                                <span class="ti-lock gradient-fill ti-3x mr-3"></span>
-                                <div class="media-body">
-                                    <h4 class="card-title">Secure</h4>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque
-                                        </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-
-
-    </div> -->
-    <!-- // end .section -->
+    
     <div class="section" id="about">
 
         <div class="container">
@@ -413,12 +355,23 @@
                 <small>Road Map</small>
                 <h3>Look into our past and future!</h3>
             </div>
+            <section class="timeline2" >
+                   <figure class="timeline2--inner"><i class="timeline2--inner-pin is-featured" data-title="Alpha build on Ethereum blockchain">
+                        <br><p style="font-size:15px;color:#fff !important;"> Feb 2018</p>
+                    </i>
+                    
+                    <i class="timeline2--inner-pin is-featured" data-title="Beta Build on BigChainDb Deployment of Unergia Platform"> <br><p style="font-size:15px;color:#fff !important;"> March 2018</p></i><i class="timeline2--inner-pin is-featured" data-title="Pilot Project on the Unergia Platform">
+                            <br><p style="font-size:15px;color:#fff !important;"> April 2018</p>
 
+                    </i><i class="timeline2--inner-pin is-featured" data-title="First Utility Payments on the Unergia Platform"> <br><p style="font-size:15px;color:#fff !important;"> 2019</p></i><i class="timeline2--inner-pin is-featured" data-title="Unergia Platform set up for various projects"> <br><p style="font-size:15px;color:#fff !important;">  2019</p></i><i class="timeline2--inner-pin is-featured" data-title="Idea Implementation"> <br><p style="font-size:15px;color:#fff !important;"> Jan 2018</p></i>
+                    </figure>
+                  </section>
             <script src="https://use.typekit.net/bkt6ydm.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
 <div class="container-fluid">
 <center>
+    
     
     <div class="row example-centered">
         
@@ -683,6 +636,8 @@
                     </div>
                     <div class="at-user__name">Farhan Ahmed</div>
                     <div class="at-user__title">CEO</div>
+                    <a href="#" data-toggle="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt orci sit amet mi egestas, non maximus augue vestibulum. Etiam tincidunt libero lorem, vel vestibulum nunc congue dapibus. Fusce condimentum dignissim tortor vitae facilisis. ">
+                            About me!</a>
                     <ul class="at-social">
                         <li class="at-social__item">
                             <a href="">
@@ -702,6 +657,8 @@
                     </div>
                     <div class="at-user__name">Esteban Mino</div>
                     <div class="at-user__title">VP of Blockchain</div>
+                    <a href="#" data-toggle="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt orci sit amet mi egestas, non maximus augue vestibulum. Etiam tincidunt libero lorem, vel vestibulum nunc congue dapibus. Fusce condimentum dignissim tortor vitae facilisis. ">
+                            About me!</a>
                     <ul class="at-social">
                         <li class="at-social__item">
                             <a href="">
@@ -721,6 +678,8 @@
                     </div>
                     <div class="at-user__name">Manan Mehta</div>
                     <div class="at-user__title">VP of Finance</div>
+                    <a href="#" data-toggle="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt orci sit amet mi egestas, non maximus augue vestibulum. Etiam tincidunt libero lorem, vel vestibulum nunc congue dapibus. Fusce condimentum dignissim tortor vitae facilisis. ">
+                            About me!</a>
                     <ul class="at-social">
                         <li class="at-social__item">
                             <a href="">
@@ -740,6 +699,8 @@
                     </div>
                     <div class="at-user__name">Abhishek Pillai</div>
                     <div class="at-user__title">VP of Operations</div>
+                    <a href="#" data-toggle="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt orci sit amet mi egestas, non maximus augue vestibulum. Etiam tincidunt libero lorem, vel vestibulum nunc congue dapibus. Fusce condimentum dignissim tortor vitae facilisis. ">
+                            About me!</a>
                     <ul class="at-social">
                         <li class="at-social__item">
                             <a href="">
@@ -759,14 +720,17 @@
                     </div>
                     <div class="at-user__name">Projjal Gupta</div>
                     <div class="at-user__title">Engineering Lead</div>
+                    <a href="#" data-toggle="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt orci sit amet mi egestas, non maximus augue vestibulum. Etiam tincidunt libero lorem, vel vestibulum nunc congue dapibus. Fusce condimentum dignissim tortor vitae facilisis. ">
+                        About me!</a>
                     <ul class="at-social">
                         <li class="at-social__item">
                             <a href="">
-                                <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                                <svg  style="text-align: center" viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z"
                                         fill-rule="evenodd"></path>
                                 </svg>
                             </a>
+                            
                         </li>
                     </ul>
                 </div>
@@ -778,6 +742,8 @@
                     </div>
                     <div class="at-user__name">Rahul Suresh</div>
                     <div class="at-user__title">Lead Developer</div>
+                    <a href="#" data-toggle="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt orci sit amet mi egestas, non maximus augue vestibulum. Etiam tincidunt libero lorem, vel vestibulum nunc congue dapibus. Fusce condimentum dignissim tortor vitae facilisis. ">
+                            About me!</a>
                     <ul class="at-social">
                         <li class="at-social__item">
                             <a href="">
@@ -797,6 +763,8 @@
                     </div>
                     <div class="at-user__name">Divij Tripathi</div>
                     <div class="at-user__title">Lead Designer</div>
+                    <a href="#" data-toggle="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt orci sit amet mi egestas, non maximus augue vestibulum. Etiam tincidunt libero lorem, vel vestibulum nunc congue dapibus. Fusce condimentum dignissim tortor vitae facilisis. ">
+                            About me!</a>
                     <ul class="at-social">
                         <li class="at-social__item">
                             <a href="">
@@ -972,10 +940,10 @@
             };
 
 
-            $('#number1').jQuerySimpleCounter({ end: 12, duration: 3000 });
-            $('#number2').jQuerySimpleCounter({ end: 55, duration: 3000 });
-            $('#number3').jQuerySimpleCounter({ end: 359, duration: 2000 });
-            $('#number4').jQuerySimpleCounter({ end: 246, duration: 2500 });
+            $('#number1').jQuerySimpleCounter({ end: 312, duration: 8000 });
+            $('#number2').jQuerySimpleCounter({ end: 155, duration: 8000 });
+            $('#number3').jQuerySimpleCounter({ end: 512, duration: 8000 });
+            $('#number4').jQuerySimpleCounter({ end: 246, duration: 8000 });
 
 
 
@@ -990,6 +958,11 @@
             });
 
         </script>
+        <script>
+            $(document).ready(function(){
+                $('[data-toggle="tooltip"]').tooltip(); 
+            });
+            </script>
 </body>
 
 </html>
