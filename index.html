@@ -1010,22 +1010,22 @@
             });
             </script>
 
-<script type="text/javascript">
-
+<script >
+console.log("hi");
             function calc25year(){
                 var invest = document.getElementById("investment").value;
                 console.log(invest);
-                var return = (4.852765957*invest)-1 ;
+                var return1 = (4.852765957*invest)-1 ;
 
-                document.getElementById("25year").innerHTML="<h3>return</h3>";
+                document.getElementById("25year").innerHTML="<h3>"+return1+"</h3>";
 
             }
 
             function calc10year(){
             var invest = document.getElementById("investment").value;
 
-                var return=0.5+(1.47739615)*invest;
-                document.getElementById("10year").innerHTML="<h3>return</h3>";
+                var return1=0.5+(1.47739615)*invest;
+                document.getElementById("10year").innerHTML="<h3>"+return1+"</h3>";
                 
             }
         </script>
