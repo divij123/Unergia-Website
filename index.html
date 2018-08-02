@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <!-- Main css -->
     <link href="css/style.css" rel="stylesheet">
+
     <style type="text/css">
         body {
             overflow-x: hidden;
@@ -97,17 +98,17 @@
                                     <a class="nav-link" href="#customer">CUSTOMER BASE</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#crowd">CROWD FUNDER</a>
+                                    <a class="nav-link" href="#crowd">Rahul</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#knowledge">KNOWLEDGE HUB</a>
+                                    <a class="nav-link" href="http://unergia.s3-website.ap-south-1.amazonaws.com/">PROJECTS</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#case">CASE STUDIES</a>
+                                    <a class="nav-link" href="#case">WHITE PAPER</a>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a href="#" class="btn btn-outline-light my-3 my-sm-0 ml-lg-3">CONTACT US</a>
+                                    <a href="#contactus" class="btn btn-outline-light my-3 my-sm-0 ml-lg-3">CONTACT US</a>
                                 </li>
                             </ul>
                         </div>
@@ -355,7 +356,17 @@
                 <small>Road Map</small>
                 <h3>Look into our past and future!</h3>
             </div>
-            <section class="timeline2" >
+
+
+
+
+
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+<div class="container-fluid">
+<center>
+    
+        <section class="timeline2" >
                    <figure class="timeline2--inner"><i class="timeline2--inner-pin is-featured" data-title="Alpha build on Ethereum blockchain">
                         <br><p style="font-size:15px;color:#fff !important;"> Feb 2018</p>
                     </i>
@@ -366,14 +377,10 @@
                     </i><i class="timeline2--inner-pin is-featured" data-title="First Utility Payments on the Unergia Platform"> <br><p style="font-size:15px;color:#fff !important;"> 2019</p></i><i class="timeline2--inner-pin is-featured" data-title="Unergia Platform set up for various projects"> <br><p style="font-size:15px;color:#fff !important;">  2019</p></i><i class="timeline2--inner-pin is-featured" data-title="Idea Implementation"> <br><p style="font-size:15px;color:#fff !important;"> Jan 2018</p></i>
                     </figure>
                   </section>
-            <script src="https://use.typekit.net/bkt6ydm.js"></script>
-<script>try{Typekit.load({ async: true });}catch(e){}</script>
 
-<div class="container-fluid">
-<center>
-    
-    
-    <div class="row example-centered">
+
+
+    <!-- <div class="row example-centered">
         
         <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
             <ul class="timeline timeline-centered">
@@ -449,7 +456,7 @@
             </ul>
         </div>
     </div>
-    </center>   
+     --></center>   
 
 </div>
 
@@ -532,7 +539,25 @@
                 <h3>Crowd Funder</h3>
             </div>
 
-            <div class="row pt-4">
+            <div class="row">
+                <div class="col-sm-6">
+                            <!-- Name -->
+                    <input type="number" name="investment" id="investment" required="required" class="form_dark" placeholder="Investment" />
+                
+                <div id="10year">
+                            <button class="btn btn-light" onclick="calc10year()">Calculate 10 year investment</button>
+
+
+                </div>
+                
+                <div id="25year">
+                            <button class="btn btn-light" onclick="calc25year()">Calculate 25 year investment</button>
+                </div>
+                
+
+                </div>
+            </div>
+            <!-- <div class="row pt-4">
                 <div class="col-md-6">
                     <h4 class="mb-3">Can I try before I buy?</h4>
                     <p class="light-font mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium,
@@ -551,7 +576,7 @@
                         nisi nisi fermentum enim, et sagittis dolor nulla vel sapien. Vestibulum sit amet mattis ante. </p>
 
                 </div>
-            </div>
+            </div> -->
         </div>
 
     </div>
@@ -595,7 +620,7 @@
     </div>
     <!-- // end .section -->
 
-
+<!-- 
     <div class="section light-bg" id="case">
         <div class="container">
             <div class="section-title">
@@ -612,7 +637,7 @@
 
         </div>
 
-    </div>
+    </div> -->
     <!-- // end .section -->
 
 
@@ -632,13 +657,12 @@
             <div class="at-column">
                 <div class="at-user">
                     <div class="at-user__avatar">
-                        <img src="images/farhan.jpg" />
-                    </div>
+                         <a href="#" data-toggle="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt orci sit amet mi egestas, non maximus augue vestibulum. Etiam tincidunt libero lorem, vel vestibulum nunc congue dapibus. Fusce condimentum dignissim tortor vitae facilisis. "><img src="images/farhan.jpg" />
+                    </div></a>
                     <div class="at-user__name">Farhan Ahmed</div>
                     <div class="at-user__title">CEO</div>
-                    <a href="#" data-toggle="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt orci sit amet mi egestas, non maximus augue vestibulum. Etiam tincidunt libero lorem, vel vestibulum nunc congue dapibus. Fusce condimentum dignissim tortor vitae facilisis. ">
-                            About me!</a>
-                    <ul class="at-social">
+                   
+                                       <ul class="at-social">
                         <li class="at-social__item">
                             <a href="">
                                 <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
@@ -653,13 +677,12 @@
             <div class="at-column">
                 <div class="at-user">
                     <div class="at-user__avatar">
-                        <img src="images/esteban.jpg" />
+                        <a href="#" data-toggle="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt orci sit amet mi egestas, non maximus augue vestibulum. Etiam tincidunt libero lorem, vel vestibulum nunc congue dapibus. Fusce condimentum dignissim tortor vitae facilisis. "><img src="images/esteban.jpg" /></a>
                     </div>
                     <div class="at-user__name">Esteban Mino</div>
                     <div class="at-user__title">VP of Blockchain</div>
-                    <a href="#" data-toggle="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt orci sit amet mi egestas, non maximus augue vestibulum. Etiam tincidunt libero lorem, vel vestibulum nunc congue dapibus. Fusce condimentum dignissim tortor vitae facilisis. ">
-                            About me!</a>
-                    <ul class="at-social">
+                    
+                            <ul class="at-social">
                         <li class="at-social__item">
                             <a href="">
                                 <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
@@ -674,12 +697,12 @@
             <div class="at-column">
                 <div class="at-user">
                     <div class="at-user__avatar">
-                        <img src="https://s3.amazonaws.com/uifaces/faces/twitter/boheme/128.jpg" />
+                         <a href="#" data-toggle="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt orci sit amet mi egestas, non maximus augue vestibulum. Etiam tincidunt libero lorem, vel vestibulum nunc congue dapibus. Fusce condimentum dignissim tortor vitae facilisis. "><img src="https://s3.amazonaws.com/uifaces/faces/twitter/boheme/128.jpg" /></a>
                     </div>
                     <div class="at-user__name">Manan Mehta</div>
                     <div class="at-user__title">VP of Finance</div>
-                    <a href="#" data-toggle="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt orci sit amet mi egestas, non maximus augue vestibulum. Etiam tincidunt libero lorem, vel vestibulum nunc congue dapibus. Fusce condimentum dignissim tortor vitae facilisis. ">
-                            About me!</a>
+                   
+                           
                     <ul class="at-social">
                         <li class="at-social__item">
                             <a href="">
@@ -695,12 +718,11 @@
             <div class="at-column">
                 <div class="at-user">
                     <div class="at-user__avatar">
-                        <img src="images/abhishek.jpg" />
+                         <a href="#" data-toggle="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt orci sit amet mi egestas, non maximus augue vestibulum. Etiam tincidunt libero lorem, vel vestibulum nunc congue dapibus. Fusce condimentum dignissim tortor vitae facilisis. "> <img src="images/abhishek.jpg" /></a>
                     </div>
                     <div class="at-user__name">Abhishek Pillai</div>
                     <div class="at-user__title">VP of Operations</div>
-                    <a href="#" data-toggle="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt orci sit amet mi egestas, non maximus augue vestibulum. Etiam tincidunt libero lorem, vel vestibulum nunc congue dapibus. Fusce condimentum dignissim tortor vitae facilisis. ">
-                            About me!</a>
+                  
                     <ul class="at-social">
                         <li class="at-social__item">
                             <a href="">
@@ -716,12 +738,11 @@
             <div class="at-column">
                 <div class="at-user">
                     <div class="at-user__avatar">
-                        <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" />
+                        <a href="#" data-toggle="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt orci sit amet mi egestas, non maximus augue vestibulum. Etiam tincidunt libero lorem, vel vestibulum nunc congue dapibus. Fusce condimentum dignissim tortor vitae facilisis. "><img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" /></a>
                     </div>
                     <div class="at-user__name">Projjal Gupta</div>
                     <div class="at-user__title">Engineering Lead</div>
-                    <a href="#" data-toggle="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt orci sit amet mi egestas, non maximus augue vestibulum. Etiam tincidunt libero lorem, vel vestibulum nunc congue dapibus. Fusce condimentum dignissim tortor vitae facilisis. ">
-                        About me!</a>
+                    
                     <ul class="at-social">
                         <li class="at-social__item">
                             <a href="">
@@ -759,12 +780,11 @@
             <div class="at-column">
                 <div class="at-user">
                     <div class="at-user__avatar">
-                        <img src="images/divij.jpg" />
+                       <a href="#" data-toggle="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt orci sit amet mi egestas, non maximus augue vestibulum. Etiam tincidunt libero lorem, vel vestibulum nunc congue dapibus. Fusce condimentum dignissim tortor vitae facilisis. "> <img src="images/divij.jpg" /></a>
                     </div>
                     <div class="at-user__name">Divij Tripathi</div>
                     <div class="at-user__title">Lead Designer</div>
-                    <a href="#" data-toggle="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt orci sit amet mi egestas, non maximus augue vestibulum. Etiam tincidunt libero lorem, vel vestibulum nunc congue dapibus. Fusce condimentum dignissim tortor vitae facilisis. ">
-                            About me!</a>
+                    
                     <ul class="at-social">
                         <li class="at-social__item">
                             <a href="">
@@ -823,7 +843,7 @@
 
 
 
-    <div class="section bg-gradient">
+    <div class="section bg-gradient" id="contactus">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -834,11 +854,40 @@
                             <span class="ti-mobile gradient-fill ti-3x"></span>
                         </div>
                         <h2>Want to Invest?</h2>
-                        <p class="" style="color:#d3d3d3">Add some text here. </p>
-                        <div class="my-4">
+                  <!--       <p class="" style="color:#d3d3d3">Add some text here. </p>
+                   -->
+<br><br>
+                        <div class="inner contact">
+                <!-- Form Area -->
+                <div class="contact-form">
+                    <!-- Form -->
+                    <form id="contact-us" method="post" action="#">
+                        <div class="row">
+                            
+                        <!-- Left Inputs -->
+                        <div class="col-sm-6 wow animated slideInLeft" data-wow-delay=".5s">
+                            <!-- Name -->
+                            <input type="text" name="name" id="name" required="required" class="form" placeholder="Name" />
+                            <!-- Email -->
+                            <input type="email" name="mail" id="mail" required="required" class="form" placeholder="Email" />
+                            <!-- Subject -->
+                            <input type="number" name="phone" id="phone" required="required" class="form" placeholder="Phone Number" />
+                        </div><!-- End Left Inputs -->
+                        <!-- Right Inputs -->
+                        <div class="col-sm-6 wow animated slideInRight" data-wow-delay=".5s">
+                            <!-- Message -->
+                            <textarea name="message" id="message" class="form textarea"  placeholder="Message"></textarea>
+                        </div><!-- End Right Inputs -->
+                        </div>
+                        
+                    </form>
+                </div><!-- End Contact Form Area -->
+            </div><!-- End Inner -->
 
-                            <a href="#" class="btn btn-light">
-                                Click Here</a>
+
+                         <div class="my-4">
+
+                            <button class="btn btn-light">Submit</button>
 
                         </div>
 
@@ -848,7 +897,7 @@
         </div>
         <!-- // end .section -->
 
-        <div class="light-bg py-5" id="contact">
+        <div class="light-bg py-5" id="contact" style="background-color: #e5e5e5;">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 text-center text-lg-left">
@@ -860,26 +909,23 @@
                                 <a class="mr-4" href="#">emailid@email.com</a>
                             </p>
                         </div>
-                        <div class="d-block d-sm-inline-block">
+                        <!-- <div class="d-block d-sm-inline-block">
                             <p class="mb-0">
                                 <span class="ti-headphone-alt mr-2"></span>
                                 <a href="tel:123213121">213-512-2131</a>
                             </p>
                         </div>
-
+ -->
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6" >
                         <div class="social-icons">
-                            <a href="#">
-                                <span class="ti-facebook"></span>
-                            </a>
                             <a href="#">
                                 <span class="ti-twitter-alt"></span>
                             </a>
-                            <a href="#">
+<!--                             <a href="#">
                                 <span class="ti-instagram"></span>
                             </a>
-                        </div>
+ -->                        </div>
                     </div>
                 </div>
 
@@ -914,7 +960,7 @@
         <script src="js/app.js"></script>
 
         <script src="js/typed.min.js"></script>
-        <script>var typed = new Typed('.name', { strings: ["Blockchain", "Solar Energy", "Transparency made simpler"], typeSpeed: 40, backSpeed: 40, loop: true }); </script>
+        <script>var typed = new Typed('.name', { strings: ["Blockchain", "Solar Energy", "Transparency made simpler","Investment made easy"], typeSpeed: 40, backSpeed: 40, loop: true }); </script>
         <script>
 
             $.fn.jQuerySimpleCounter = function (options) {
@@ -963,6 +1009,27 @@
                 $('[data-toggle="tooltip"]').tooltip(); 
             });
             </script>
-</body>
+
+<script type="text/javascript">
+
+            function calc25year(){
+                var invest = document.getElementById("investment").value;
+                console.log(invest);
+                var return = (4.852765957*invest)-1 ;
+
+                document.getElementById("25year").innerHTML="<h3>return</h3>";
+
+            }
+
+            function calc10year(){
+            var invest = document.getElementById("investment").value;
+
+                var return=0.5+(1.47739615)*invest;
+                document.getElementById("10year").innerHTML="<h3>return</h3>";
+                
+            }
+        </script>
+
+        </body>
 
 </html>

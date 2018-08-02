@@ -1,33 +1,5 @@
 @charset "UTF-8";
 
-/*
-
-Style   : MobApp CSS
-Version : 1.0
-Author  : Surjith S M
-URI     : https://surjithctly.in/
-
-Copyright © All rights Reserved 
-
-*/
-
-
-/*------------------------
-[TABLE OF CONTENTS]
-    
-1. GLOBAL STYLES
-2. NAVBAR
-3. HERO
-4. TABS
-5. TESTIMONIALS
-6. IMAGE GALLERY
-7. PRICING
-8. CALL TO ACTION
-9. FOOTER
-
-------------------------*/
-
-
 /* GLOBAL
 ----------------------*/
 @font-face {
@@ -1317,3 +1289,76 @@ a:hover {
             transform: translateX(-50%);
   }
   
+
+  .form{
+    width: 100%;
+    padding: 14px;
+    background:transparent;
+    opacity: 1;
+    border:transparent;
+    border-bottom: 2px solid rgba(230, 230, 230,0.5);
+    border-radius: 1%;
+    margin-bottom:25px;
+    color:#fff !important;
+    font-size:13px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+
+  .form:hover{
+    border:2px solid #fff;
+  }
+
+  .form:focus{
+    color: white;
+    outline: none;
+    border:2px solid #fff;
+  }
+
+  .textarea{
+    height: 200px;
+    max-height: 200px;
+    max-width: 100%;
+  }
+  
+  input {
+    position: relative;
+}
+
+
+#contact{
+    padding:10px 0 10px;
+  }
+
+  .contact-text{
+    margin:45px auto;
+  }
+
+  .form_dark{
+    width: 100%;
+    padding: 14px;
+    background:transparent;
+    opacity: 1;
+    border:transparent;
+    border-bottom: 2px solid rgba(1, 1, 1,0.5);
+    border-radius: 1%;
+    margin-bottom:25px;
+    color:#282828 !important;
+    font-size:13px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+
+  .form_dark:hover{
+    border:2px solid #282828;
+  }
+
+  .form_dark:focus{
+    color: #282828;
+    outline: none;
+    border:2px solid #282828;
+  }
+
+
