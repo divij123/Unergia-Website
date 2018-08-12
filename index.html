@@ -98,7 +98,7 @@
                                     <a class="nav-link" href="#customer">CUSTOMER BASE</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#crowd">Rahul</a>
+                                    <a class="nav-link" href="https://srmkzilla.net/test/payments/">PAYMENTS</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="http://unergia.s3-website.ap-south-1.amazonaws.com/">PROJECTS</a>
@@ -541,17 +541,22 @@
 
             <div class="row">
                 <div class="col-sm-6">
+                    <p>lorem ipsium</p>
+                </div>
+                <div class="col-sm-6">
                             <!-- Name -->
                     <input type="number" name="investment" id="investment" required="required" class="form_dark" placeholder="Investment" />
+                           
+
+                 <button class="btn btn-light" onclick="calc10year()">Calculate 10 year investment</button>
                 
                 <div id="10year">
-                            <button class="btn btn-light" onclick="calc10year()">Calculate 10 year investment</button>
 
 
                 </div>
+                            <button class="btn btn-light" onclick="calc25year()">Calculate 25 year investment</button>
                 
                 <div id="25year">
-                            <button class="btn btn-light" onclick="calc25year()">Calculate 25 year investment</button>
                 </div>
                 
 
@@ -1011,7 +1016,7 @@
             </script>
 
 <script >
-console.log("hi");
+
             function calc25year(){
                 var invest = document.getElementById("investment").value;
                 console.log(invest);
