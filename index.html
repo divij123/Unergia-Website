@@ -12,7 +12,7 @@
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,800" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -161,7 +161,9 @@
   border-right: 7px solid #ee4d4d;
 }
 
-
+.drop:hover{
+  background-color:rgba(0,0,0,0.2);
+}
 
 @media screen and (max-width: 768px) {
   #timeline {
@@ -227,15 +229,26 @@
                                  <li class="nav-item">
                                     <a class="nav-link" href="#team">TEAM</a>
                                 </li>
-                               <!--  <li class="nav-item">
+                                <li class="dropdown">
+                                  <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">INVESTMENT PLATFORM
+                                  <span class="caret"></span></a>
+                                  <ul class="dropdown-menu">
+                                    
+                                    <li>
+                                    <a class="nav-link drop" href="/payments" style="color: black;">PAYMENTS</a></li>
+                                    <li> <a class="nav-link drop" href="http://unergia.s3-website.ap-south-1.amazonaws.com/"  style="color: black;">PROJECTS</a></li>
+                                   
+                                  </ul>
+                                </li>
+                            <!--     <li class="nav-item">
                                     <a class="nav-link" href="https://srmkzilla.net/test/payments/">PAYMENTS</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="http://unergia.s3-website.ap-south-1.amazonaws.com/">PROJECTS</a>
-                                </li> -->
+                                </li> --><!-- 
                                 <li class="nav-item">
                                     <a class="nav-link" href="https://drive.google.com/open?id=14xwIKAj6qXd_KtkG8Cz4zm8GMW8DjRWr" target="_blank">WHITE PAPER</a>
-                                </li>
+                                </li> -->
 
                                 <li class="nav-item">
                                     <a href="#contactus" class="btn btn-outline-light my-3 my-sm-0 ml-lg-3">CONTACT US</a>
@@ -271,7 +284,7 @@
             </h2>
             <br>
             <br>
-            <p class="tagline container" style="color:white">Unergia is a crowdfunding platform for solar projects that is powered by blockchain. </p>
+            <p class="tagline container" style="color:white">Unergia is a Crowdfunding Platform for Solar Projects, powered by Blockchain.  </p>
             <br>
             <br>
 
@@ -299,21 +312,21 @@
                     <span id="number1" class="number"></span>
                 </h1>
                 <p>Units of Energy Used </p>
-                <i class="fa fa-users"></i>
+               <!--  <i class="fa fa-users"></i> -->
             </div>
             <div class="col-md-4 col-sm-12">
                 <h1 style="margin-bottom:0px">$
                     <span id="number2" class="number"></span>
                 </h1>
                 <p>Money Saved</p>
-                <i class="fa fa-desktop"></i>
+               <!--  <i class="fa fa-desktop"></i> -->
             </div>
             <div class="col-md-4 col-sm-12">
                 <h1 style="margin-bottom:0px">
                     <span id="number3" class="number"></span>
                 </h1>
                 <p>Transactions</p>
-                <i class="fa fa-coffee"></i>
+               <!--  <i class="fa fa-coffee"></i> -->
             </div>
         </div>
      
@@ -331,11 +344,13 @@
 
                     <p class="mb-4">For India to grow in leaps and bounds, it is imperative that it invests in cleaner sources of energy. Unergia is helping India realise its potential in unlocking its renewable capacity. The Government set a target of generating 40 GW of renewable energy through rooftops by 2022, out of which only 2 GW has been generated up until now. The reason for the low uptake is high initial cost of investment and lack of sound financing options.
 <br><br>
+<span id="text">
 The existing energy infrastructure is centered on a few companies that wield power over electricity usage. This power leads to indiscriminate hike in energy prices at regular intervals. Unergia is an investment platform for solar projects, based on crowdfunding. We shall help rooftop providers fund their solar rooftop projects, with all the miscellaneous costs. In turn, investors of these projects will be contracted to receive financial rewards at the rate of 10-15% per year on their investment, over the life of the solar project. We are committed to ensure that everybody wins when they associate themselves to Unergia.
 <br><br>
-Unergia aims to create communities founded on transparency and trust with the aim of democratizing power and giving the authority back to the people. Unergia does this by crowdfunding solar projects for residential, commercial and academic institutions. As consumers use the electricity sourced by renewable sources, they pay lesser than they did with existing electricity grid and the majority of the monthly electricity bill goes back to the crowd funders. Unergia takes a small cut from these revenue channels.
+Unergia aims to create communities founded on transparency and trust with the aim of democratizing power and giving the authority back to the people. Unergia does this by crowdfunding solar projects for residential, commercial and academic institutions. As consumers use the electricity sourced by renewable sources, they pay lesser than they did with existing electricity grid and the majority of the monthly electricity bill goes back to the crowd funders. Unergia takes a small cut from these revenue channels.</span>
                     </p>
-                    <a href="#" class="btn btn-primary">Read more</a>
+                    <button class="btn btn-primary" id="toggle">Read more</button>
+                    <br><br><br>
                 </div>
             </div>
             <div class="perspective-phone">
@@ -367,6 +382,9 @@ Unergia aims to create communities founded on transparency and trust with the ai
                 <li class="nav-item">
                     <a class="nav-link" data-toggle="tab" href="#livechat">Second Hand Markets </a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#panels">Fully Secured Panels </a>
+                </li>
             </ul>
             <div class="tab-content">
                 <div class="tab-pane fade show active" id="communication">
@@ -396,8 +414,8 @@ Unergia aims to create communities founded on transparency and trust with the ai
                     <div class="d-flex flex-column flex-lg-row">
                         <img src="images/graphic.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
                         <div>
-                            <h2>Longer horizons for investments </h2>
-                            <p>Solar panels are warranted for 5 years and will be further insured during its shell-life. This would enable investors to continue reaping returns on their investment of 10-15% for a period of 25 years. Unergia shall employ a task team to ensure high maintenance of the solar panels. 
+                            <h2>App- Based interface</h2>
+                            <p>Potential investors can surf through the different projects that require to be crowdfunded, on the app-based interface of Unergia. They can choose projects based on personal parameters and invest accordingly. The users’ personal page that opens up on login also contains private information regarding the payments and projects.  
                             </p>
                            
                         </div>
@@ -408,6 +426,18 @@ Unergia aims to create communities founded on transparency and trust with the ai
                         <div>
                             <h2>Second Hand Markets </h2>
                             <p>Unergia values the freedom of its crowdfunders. The second hand markets allows to trade their positions for a certain price determined by the demand and supply forces. This would simply imply the building block of a certain solar project has been passed on from one crowdfunder to another, without having affected the project itself.
+                            </p>
+                           
+                        </div>
+                        <img src="images/graphic.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="panels">
+                    <div class="d-flex flex-column flex-lg-row">
+                        <div>
+                            <h2>Fully Secured Panels </h2>
+                            <p>Unergia ensures solar panel retailers/manufacturers provides fully insured and warrantied equipment. The after-sale service and maintenance will leave no stone unturned to ensure the projects can sustain themselves for a period of 20-25 years. The security is as important for us, as it is for any other stakeholder.  
                             </p>
                            
                         </div>
@@ -772,26 +802,37 @@ Unergia Platform set up for various project                    </p>
             </div>
 
             <div class="row">
-                <div class="col-sm-6">
-                    <p>lorem ipsium</p>
-                </div>
-                <div class="col-sm-6">
-                            <!-- Name -->
-                    <input type="number" name="investment" id="investment" required="required" class="form_dark" placeholder="Investment" />
+                <div class="col-sm-4">
+                     <input type="number" name="investment" id="investment" required="required" class="form_dark" placeholder="Enter Amount to Invest" />
                            
 
-                 <button class="btn btn-light" onclick="calc10year()">Calculate 10 year investment</button>
+                 <button class="btn btn-light" onclick="calc()">Calculate</button>
+                </div>
+                <div class="col-sm-4">
+                            
+                <div id="monthly">
+                  <h4 style="font-weight: bold;">Monthly return : </h4>
+                  <h3 id="monthly"></h3>
+                </div>
+                            
+                <div id="yearly">
+                  <h4 style="font-weight: bold;">Yearly return : </h4>
+                  <h3 id="yearly"></h3>
+                </div>
                 
-                <div id="10year">
-
+                <div id="year25">
+                  <h4 style="font-weight: bold;">25 year return : </h4>
+                  <h3 id="year25"></h3>
+                </div>
+                
 
                 </div>
-                            <button class="btn btn-light" onclick="calc25year()">Calculate 25 year investment</button>
-                
-                <div id="25year">
-                </div>
-                
 
+                <div class="col-sm-4">
+                  <div id="trees">
+                  <h4 style="font-weight: bold;">Equivalent to planting</h4>
+                    <h3 id="trees"></h3>
+                  </div>
                 </div>
             </div>
             <!-- <div class="row pt-4">
@@ -850,24 +891,35 @@ Unergia Platform set up for various project                    </p>
     </div>
     <!-- // end .section -->
 
-<!-- 
+
     <div class="section light-bg" id="case">
         <div class="container">
             <div class="section-title">
-                <small>Case Studies</small>
-                <h3>Prototype Screenshots</h3>
+                <small>Our Accomplishments</small>
+                <h3>Awards</h3>
             </div>
-
-            <div class="img-gallery owl-carousel owl-theme">
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-3">
+                <img src="images/1st.png" class="img-responsive thumbnail" style="width: 50%;">
+                <h5>IBC Hack Winners</h5>
+                
+              </div>
+            </div>
+           <!--  <div class="img-gallery owl-carousel owl-theme">
                 <img src="images/screen1.jpg" alt="image">
                 <img src="images/screen2.jpg" alt="image">
                 <img src="images/screen3.jpg" alt="image">
                 <img src="images/screen1.jpg" alt="image">
-            </div>
+            </div> -->
 
         </div>
 
-    </div> -->
+    </div>
+
+
+    
+
     <!-- // end .section -->
 
 
@@ -1034,6 +1086,27 @@ Unergia Platform set up for various project                    </p>
     <!-- // end .pricing -->
 
 
+    <div class="section light-bg" id="random">
+        <div class="container">
+            <div class="section-title">
+                <small></small>
+                <h3>Press About Us</h3>
+            </div>
+          
+             <div class="img-gallery owl-carousel owl-theme">
+                <img src="images/toi.png" alt="image">
+                <img src="images/toi.png" alt="image">
+                <img src="images/toi.png" alt="image">
+                <img src="images/toi.png" alt="image">
+                <img src="images/toi.png" alt="image">
+                <img src="images/toi.png" alt="image">
+               
+            </div> 
+
+        </div>
+
+    </div>
+
 
 
 
@@ -1049,22 +1122,31 @@ Unergia Platform set up for various project                    </p>
 
             <div class="row pt-4">
                 <div class="col-md-6">
-                    <h4 class="mb-3">Can I try before I buy?</h4>
-                    <p class="light-font mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium,
-                        nisi nisi fermentum enim, et sagittis dolor nulla vel sapien. Vestibulum sit amet mattis ante. </p>
-                    <h4 class="mb-3">What payment methods do you accept?</h4>
-                    <p class="light-font mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium,
-                        nisi nisi fermentum enim, et sagittis dolor nulla vel sapien. Vestibulum sit amet mattis ante. </p>
+                    <h4 class="mb-3">How does second hand market work?</h4>
+                    <p class="light-font mb-5">The second hand market is to enable people to trade their financial positions for a price determined by the demand and supply. The financial position can be sold any time. It is being developed at the moment.  </p>
+                    <h4 class="mb-3">When will the project start?</h4>
+                    <p class="light-font mb-5">The project starts when the entire funding requirement is met. Crowdfunders can check the status any time through the app. Once the target is reached, the installation is done within a week. </p>
 
                 </div>
                 <div class="col-md-6">
-                    <h4 class="mb-3">Can I change my plan later?</h4>
-                    <p class="light-font mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium,
-                        nisi nisi fermentum enim, et sagittis dolor nulla vel sapien. Vestibulum sit amet mattis ante. </p>
-                    <h4 class="mb-3">Do you have a contract?</h4>
-                    <p class="light-font mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium,
-                        nisi nisi fermentum enim, et sagittis dolor nulla vel sapien. Vestibulum sit amet mattis ante. </p>
+                    <h4 class="mb-3">Am I guaranteed a minimum return? </h4>
+                    <p class="light-font mb-5">Yes, crowdfunders are guaranteed a minimum return, which is dependent on the project and the amount of investment. </p>
+                    <h4 class="mb-3">How are returns calculated?</h4>
+                    <p class="light-font mb-5">Unergia approaches consumers that have been using the conventional power. Once they agree and their project is crowdfunded, Unergia strikes a deal through Purchasing Power Agreement (PPA) to buy the solar energy at a rate sufficiently above the cost of producing the solar energy, but significantly below the conventional power. Depending on the project, Unergia guarantees a yearly return to the consumer within the range promised. For more information, click this link.  </p>
 
+                </div>
+              </div>
+            <div class="row pt-4">
+
+                <div class="col-md-6">
+                    <h4 class="mb-3">What is blockchain and how does Unergia use it?</h4>
+                    <p class="light-font mb-5">In the context of Unergia, blockchain is a transparent database that allows multiple stakeholders to receive immutable information. Time sensitive data is transmitted periodically, where intermediaries add cost and complexity. Unergia complements the IoT features of the solar projects with blockchain to ensure that data regarding electricity usage, payment calculations and transmissions, maintenance work and payments, are not only responsibly stored but also kept transparent. <br>There is no involvement of cryptocurrencies in the entirety of Unergia. </p>
+                   
+                </div>
+                <div class="col-md-6">
+                     <h4 class="mb-3">What happens if the project is damaged or destroyed?</h4>
+                    <p class="light-font mb-5">Unergia only partners with solar project retailers and manufacturers that can insure and warrant the projects for a period of 25 years. The insurance costs are included in the project costs that are to be crowdfunded.  </p>
+                   
                 </div>
             </div>
         </div>
@@ -1176,6 +1258,7 @@ Unergia Platform set up for various project                    </p>
                 <a href="#" class="m-2" style="color: #fff;">TERMS</a>
                 <a href="#" class="m-2" style="color: #fff;">PRIVACY</a>
             </small>
+
         </footer>
 
         <!-- jQuery and Bootstrap -->
@@ -1191,7 +1274,7 @@ Unergia Platform set up for various project                    </p>
         <script src="js/app.js"></script>
 
         <script src="js/typed.min.js"></script>
-        <script>var typed = new Typed('.name', { strings: ["Blockchain", "Solar Energy", "Transparency made simpler","Investment made easy"], typeSpeed: 40, backSpeed: 40, loop: true }); </script>
+        <script>var typed = new Typed('.name', { strings: ["Decentralized solar power generation", "Hassle free high returns", "Blockchain enabled transparency"], typeSpeed: 40, backSpeed: 40, loop: true }); </script>
         <script>
 
             $.fn.jQuerySimpleCounter = function (options) {
@@ -1243,23 +1326,59 @@ Unergia Platform set up for various project                    </p>
 
 <script >
 
-            function calc25year(){
+           function calc(){
                 var invest = document.getElementById("investment").value;
                 console.log(invest);
-                var return1 = (4.852765957*invest)-1 ;
+                var return1 = (0.016175877*invest) ;
+                return1= return1.toFixed(1);
+                document.getElementById("monthly").innerHTML+=return1;
+              
 
-                document.getElementById("25year").innerHTML="<h3>"+return1+"</h3>";
 
-            }
+                  var return2 = (0.194110519*invest) ;
+                return2= return2.toFixed(1);
 
-            function calc10year(){
-            var invest = document.getElementById("investment").value;
 
-                var return1=0.5+(1.47739615)*invest;
-                document.getElementById("10year").innerHTML="<h3>"+return1+"</h3>";
+                document.getElementById("yearly").innerHTML+=return2;
+
+                 var return3=(4.852762979*invest);
+                return3= return3  .toFixed(1);
+
+
+                document.getElementById("year25").innerHTML+=return3;
                 
+                var return4=(0.00075901*invest)+ 0.285714286;
+                
+                return4= return4.toFixed(1);
+
+
+                document.getElementById("trees").innerHTML+=return4+" trees <img src='images/tree.png' style='width:7%;'>";
+
+                
+
             }
-        </script>        
+
+
+        </script> 
+        <script type="text/javascript">
+          $(document).ready(function() {
+  $("#toggle").click(function() {
+    var elem = $("#toggle").text();
+    if (elem == "Read More") {
+      //Stuff to do when btn is in the read more state
+      $("#toggle").text("Read Less");
+      $(".perspective-phone").css('margin-top','-500px');
+
+      $("#text").slideDown();
+    } else {
+      //Stuff to do when btn is in the read less state
+      $("#toggle").text("Read More");
+      $(".perspective-phone").css('margin-top','-570px');
+      $("#text").slideUp();
+    }
+  });
+});
+        </script>       
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
